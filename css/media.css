@@ -1,0 +1,125 @@
+/* 1400px и больше(desktop) - extra extra large
+1200px и больше(desktop) - extra large
+992px и больше(desktop и tablet) - large
+768px и больше(tablet) - medium
+576px и больше(mobiles) - small
+390px и меньше(mobiles) - extra small */
+
+
+@media screen and (max-width: 768px) {
+    .container {
+       width: 90%;
+    }
+    .header__burger {
+        display: block;
+    }
+    .header__nav ul {
+        display: none;
+    }
+
+    .main__wrap {
+        margin: 0 auto;
+        align-items: center;
+        color: rgb(205, 96, 8);
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .col-4 {
+        width: 50%;
+        }
+    .footer__wrap {
+        row-gap: 30px;
+        }
+    footer h2,  footer ul  {
+        width: 100%;
+    }
+    footer h2 {
+        text-align: center;
+    }
+    footer ul  {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .col-4 {
+        width: 100%;
+        padding: 0 15px;
+    }
+    .contacts__info--send {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: center;
+        margin-block: 15px;
+    }
+
+    .advantages__container {
+        display: flex;
+        column-gap: 40px;
+        flex-wrap: wrap }
+    button {
+        margin: 20px 25px;
+    }
+    .contacts__img img {
+        margin-left: 130px;
+     }
+     .about__box {
+        background-color: #d6d7da;
+        width: 400px;
+        margin-left: 45px;
+ 
+}
+}
+
+
+@media screen and (max-width: 768px) {
+  
+    .row {
+        margin: 0px auto;
+    }
+    .contacts__img img {
+        width: 250px;
+        display: flex;
+        align-items: center;
+        margin-left: 100px;
+        margin-block: 20px;
+
+    }
+    .parents-contacts {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #contacts {
+        padding: 0px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .contacts__img img {
+        width: 250px;
+        display: flex;
+        margin-block: 20px;
+        margin: 0 auto;
+    }
+    .contacts__info {
+        padding: 20px;
+    }
+
+    .contacts__info--send {
+        margin: 0px 120px;
+    }
+
+    .parents-contacts {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #contacts {
+        padding: 0px;
+    }
+}
+
